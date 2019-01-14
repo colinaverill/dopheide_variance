@@ -1,0 +1,2 @@
+#transferring pecan_gen on pecan to scc.
+scp -r /fs/data3/caverill/dopheide_data/. caverill@scc1.bu.edu:/projectnb/talbot-lab-data/caverill/dopheide_data
