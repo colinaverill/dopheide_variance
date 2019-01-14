@@ -1,5 +1,5 @@
 #paths.r for dopeheide variance analysis.
-master_dir <- '/projectnb/talbot-lab-data/caverill/dopheide_data'
+master_dir <- '/projectnb/talbot-lab-data/caverill/dopheide_data/'
 host <- system('hostname', intern=T)
 if(host == 'pecan2'){
   master_dir <- '/fs/data3/caverill/dopheide_data/'
