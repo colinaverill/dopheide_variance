@@ -24,6 +24,7 @@ if(file.exists("SRAmetadb.sqlite") == F){
   srafile = getSRAdbFile()
   cat('SRA sqlite table downloaded and unzipped! ');toc()
 }
+#open connection to datbase.
 con = dbConnect(RSQLite::SQLite(),srafile)
 
 #get SRR codes associated with given SRP.----
