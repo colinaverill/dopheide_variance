@@ -11,16 +11,16 @@ toc = function() print(Sys.time()-timer)
 output_filepath <- dada2_esv_table.path
  track_filepath <- dada2_sequence_tracking.path
 
-#path to sequences
+#path to raw sequences directory.----
 seq.dir <- seq_dir
-
-# set fwd reverse truncaltion length based on quality profile plots.
-truncation_setting <- c(250, 150)
 
 #grab fwd and reverse reads, sample names.----
 fwd <- sort(list.files(seq.dir, pattern = '_1.fastq', full.names = T))
 rev <- sort(list.files(seq.dir, pattern = '_2.fastq', full.names = T))
 sample.names <- substr(basename(fwd),1, nchar(basename(fwd)[1]) - 8)
+
+#set fwd reverse truncaltion length based on quality profile plots.----
+truncation_setting <- c(250, 150)
 
 #Filter samples.----
 cat('Begin quality filtering...\n')
@@ -89,5 +89,4 @@ system(cmd)
 saveRDS(seqtab.nochim, output_filepath)
 saveRDS(track        ,  track_filepath)
 cat('Analysis complete.\n')
-#end script.
-
+#end script.----
