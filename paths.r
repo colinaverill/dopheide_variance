@@ -24,3 +24,4 @@ dada2_sequence_tracking.path <- paste0(small_dir,'dada2_sequence_tracking.rds')
 #mapping files.
 map.path <- paste0(small_dir,'Wx80_sample_data.txt')
 srr_key.path <- paste0(small_dir,'dopheide_2018_SRR_key.csv')
+variance_analysis_product.path <- paste0(small_dir,'variance_analysis_product.rds')
