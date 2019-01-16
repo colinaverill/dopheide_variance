@@ -7,7 +7,7 @@
 #Specfiy hard time limit for the job. 100 hours is plenty.
 #$ -l h_rt=100:00:00
 # Request cores on node.
-#$ -pe omp 24
+#$ -pe omp 16
 #
 #Give the job a name
 #$ -N dada2_dop

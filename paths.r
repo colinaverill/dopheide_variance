@@ -6,7 +6,8 @@ if(host == 'pecan2'){
 }
 
 #raw sequence data.----
-seq_dir <- paste0(master_dir,'raw_seq_data/')
+ seq_dir <- paste0(master_dir,'raw_seq_data/')
+trim_dir <- paste0(master_dir,'trim_fastq_files/') #post bbduk trimming.
 cmd <- paste0('mkdir -p ',seq_dir)
 system(cmd)
 

@@ -12,7 +12,7 @@ output_filepath <- dada2_esv_table.path
  track_filepath <- dada2_sequence_tracking.path
 
 #path to raw sequences directory.----
-seq.dir <- seq_dir
+seq.dir <- trim_dir
 
 #grab fwd and reverse reads, sample names.----
 fwd <- sort(list.files(seq.dir, pattern = '_1.fastq', full.names = T))
@@ -82,7 +82,7 @@ rownames(track) <- sample.names
 head(track)
 
 #clean up intermediate files.----
-cmd <- paste0('rm -rf ',seq_dir,'filtered/')
+cmd <- paste0('rm -rf ',seq.dir,'filtered/')
 system(cmd)
 
 #Save output.----
