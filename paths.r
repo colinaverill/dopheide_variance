@@ -20,3 +20,7 @@ system(cmd)
         dada2_esv_table.path <- paste0(small_dir,'dada2_esv_table.rds')
 dada2_sequence_tracking.path <- paste0(small_dir,'dada2_sequence_tracking.rds')
         dada2_tax_table.path <- paste0(small_dir,'dada2_tax_table.rds')
+        
+#mapping files.
+map.path <- paste0(small_dir,'Wx80_sample_data.txt')
+srr_key.path <- paste0(small_dir,'dopheide_2018_SRR_key.csv')
